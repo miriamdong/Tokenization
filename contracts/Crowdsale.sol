@@ -1,4 +1,5 @@
-pragma solidity ^0.6.0;
+//SPDX-License-Identifier: MIT
+pragma solidity ^0.6.1;
 
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/GSN/Context.sol";
@@ -44,6 +45,7 @@ contract Crowdsale is Context, ReentrancyGuard {
      * @param value weis paid for purchase
      * @param amount amount of tokens purchased
      */
+
     event TokensPurchased(address indexed purchaser, address indexed beneficiary, uint256 value, uint256 amount);
 
     /**
@@ -196,7 +198,7 @@ contract Crowdsale is Context, ReentrancyGuard {
     /**
      * @dev Determines how ETH is stored/forwarded on purchases.
      */
-    function _forwardFunds() internal {
+    function _forwardFunds() internal virtual {
         _wallet.transfer(msg.value);
     }
 }
