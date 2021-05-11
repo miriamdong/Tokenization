@@ -35,10 +35,11 @@ web3.eth.sendTransaction({from: accounts[0], to:"USE ADDRESS HERE", value: web3.
 npm install --save dotenv
 ```
 
-## Add KYC, or "know your customer"
+## Add KYC, or "know your customer" to whitelist / give permission
 
-![image of app](https://github.com/miriamdong/Tokenization/blob/master/Doc/screencapture-localhost-3000-2021-05-11-00_02_27.png?raw=true)
-Whitelisting and give someone permission to do something.
+<p align="center">
+  <img src="https://github.com/miriamdong/Tokenization/blob/master/Doc/screencapture-localhost-3000-2021-05-11-00_02_27.png?raw=true" alt="image of app"/>
+</p>
 
 ## Frontend: Load Contracts to React
 
@@ -53,8 +54,9 @@ Add HDWalletProvider and the Mnemonic to Truffle and modify truffle-config.js
 ```
 npm install --save @truffle/hdwallet-provider
 ```
-
-![image of MetaMask](https://github.com/miriamdong/Tokenization/blob/master/Doc/Screen%20Shot%202021-05-11%20at%2012.28.38%20AM.png?raw=true)
+<p align="center">
+  <img src="https://github.com/miriamdong/Tokenization/blob/master/Doc/Screen%20Shot%202021-05-11%20at%2012.28.38%20AM.png?" alt="image of MetaMask"/>
+</p>
 
 ## Real-World Use-Case for this Project
 
